@@ -26,3 +26,8 @@ src/
 tests/
   ...pytest tests...
 
+
+🔗 Blog Write-Up
+
+Full breakdown on AWS Builder Center:
+[https://builder.aws.com/create/content/36NOLcWsfP40wGOlVjkrvFA1HYk?v=36NOLdsMpkzzgQ50CDyOMIz2GXK](https://builder.aws.com/content/36NOLcWsfP40wGOlVjkrvFA1HYk/automating-desktop-cleanup-with-python-a-simple-script-that-saves-me-every-day)
