@@ -1,18 +1,28 @@
-Problem: “My desktop turns into a junkyard.”
+# desktop-cleaner
 
-Solution: desktop_cleaner.py – one command to declutter.
+A small Python tool that keeps your Desktop clean by organizing files into folders by type, with **dry-run** and **undo** support.
 
-Examples:
+## Features
 
-python3 desktop_cleaner.py              # clean with autodetect
-python3 desktop_cleaner.py --dry-run    # preview only
-python3 desktop_cleaner.py --undo       # restore last cleanup
+- Auto-detect any target folder (works great for Desktop)
+- Categorize files into:
+  - `Images/`
+  - `Documents/`
+  - `Code/`
+  - `Others/`
+- `--dry-run` to preview moves without changing anything
+- `--undo` to revert the last cleanup using a history file
+- Detailed logging of every action
 
+## Project layout
 
-Log Files
+```text
+src/
+  main.py          # CLI entrypoint
+  cleaner.py       # Core organizing logic
+  categorizer.py   # File type detection
+  logger.py        # Logging setup
+  undo.py          # Undo engine
+tests/
+  ...pytest tests...
 
-Every run writes a timestamped log to ~/.desktop-cleaner/logs/.
-
-Undo Support
-
---undo restores files using the latest log.
